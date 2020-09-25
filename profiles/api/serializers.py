@@ -7,7 +7,7 @@ class ProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Profile
-        execlude = ('id',)
+        exclude = ('id',)
 
 
 class ProfileAvatarSerializer(serializers.ModelSerializer):

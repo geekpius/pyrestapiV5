@@ -1,8 +1,8 @@
-# from django.urls import path, re_path
-# from .views import *
+from django.urls import path, re_path
+from profiles.api.views import ProfileListAPIView
 
-# app_name = 'profiles'
+app_name = 'profiles'
 
-# urlpatterns = [
-    
-# ]
+urlpatterns = [
+    path('profiles/', ProfileListAPIView.as_view(), name='list'),
+]
